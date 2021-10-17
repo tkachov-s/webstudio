@@ -1,0 +1,60 @@
+:root {
+    --primary-txt-color:#212121;
+    --secondary-txt-color:#757575;
+    --primary-bgc:#FFFFFF;
+    --secondary-bgc:#2F303A;
+    --hover-color: #2196F3;
+}
+
+body {
+    color: var(--primary-txt-color);
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.contacts .contacts-link {
+    color: var(--secondary-txt-color);
+}
+.header-nav .nav-link {
+    color: inherit;
+}
+.header-nav .nav-link:hover,
+.contacts .contacts-link:hover {
+    color: var(--hover-color);
+}
+.header-nav .nav-link:focus,
+.contacts .contacts-link:focus {
+    color: var(--hover-color);
+}
+
+.filter .filter-button {
+    color: inherit;
+    background-color: #F5F4FA;
+}
+.filter .filter-button:hover {
+    color: #FFFFFF;
+    background-color: var(--hover-color)
+}
+.filter .filter-button:focus {
+    color: #FFFFFF;
+}
+
+.footer {
+    background-color: #2F303A;
+}
+.footer-contacts {
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer-location,
+.footer-phrase {
+    color: #FFFFFF;
+}
+.nav-img:hover {
+    background-color: var(--hover-color);
+}
+.nav-link.current{
+    color: var(--hover-color);
+}

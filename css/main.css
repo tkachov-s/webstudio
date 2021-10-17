@@ -1,0 +1,79 @@
+:root {
+    --primary-txt-color:#212121;
+    --secondary-txt-color:#757575;
+    --primary-bgc:#FFFFFF;
+    --secondary-bgc:#2F303A;
+    --hover-color: #2196F3;
+}
+
+body {
+    color: var(--primary-txt-color);
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.contacts .contacts-link {
+    color: var(--secondary-txt-color);
+}
+.header-nav .nav-link {
+    color: inherit;
+}
+.header-nav .nav-link:hover,
+.contacts .contacts-link:hover {
+    color: var(--hover-color);
+}
+
+.header-nav .nav-link:focus,
+.contacts .contacts-link:focus {
+    color: var(--hover-color);
+}
+.hero {
+    color: #FFFFFF;
+    background-color: var(--secondary-bgc);
+}
+.button {
+    color: #FFFFFF;
+    background-color: var(--hover-color);
+}
+.feature-phrase,
+.team-position {
+    color: var(--secondary-txt-color);
+}
+.feature-svg {
+    background-color: #F5F4FA;
+}
+
+.our-team {
+    background-color:#F5F4FA;
+}
+
+.feature-svg:hover,
+.nav-img:hover,
+.social-logo:hover,           
+.clients-logo:hover {
+    background-color: var(--hover-color);
+}
+
+.feature-svg:focus,
+.nav-img:focus, 
+.social-logo:focus,          
+.clients-logo:focus {
+    background-color: var(--hover-color);
+}
+
+.footer {
+    background-color: #2F303A;
+}
+.footer-contacts {
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer-location,
+.footer-phrase {
+    color: #FFFFFF;
+}
+.nav-link.current{
+    color: var(--hover-color);
+}

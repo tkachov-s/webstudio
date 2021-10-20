@@ -8,6 +8,11 @@
 
 body {
     color: var(--primary-txt-color);
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
 }
 li {
     list-style: none;
@@ -17,6 +22,9 @@ a {
 }
 .contacts .contacts-link {
     color: var(--secondary-txt-color);
+}
+.header {
+    font-weight: 500;
 }
 .header-nav .nav-link {
     color: inherit;
@@ -34,13 +42,47 @@ a {
     color: #FFFFFF;
     background-color: var(--secondary-bgc);
 }
+.hero-title {
+    font-size: 44px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+}
 .button {
     color: #FFFFFF;
     background-color: var(--hover-color);
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
 }
 .feature-phrase,
 .team-position {
     color: var(--secondary-txt-color);
+}
+.feature-phrase {
+    font-weight: 400;
+    line-height: 1.71;
+}
+.gallery-title,
+.team-title{
+    font-size: 36px;
+}
+.item-title {
+    font-size: 16px;
+    font-weight: 500;
+}
+.team-position {
+    font-size: 16px;
+    font-weight: 400;
+}
+.clients-title {
+    font-size: 36px;
+}
+.footer-location,
+.footer-contacts {
+    font-weight: 400;
+    line-height: 1.71;
 }
 .feature-svg {
     background-color: #F5F4FA;
@@ -76,4 +118,12 @@ a {
 }
 .nav-link.current{
     color: var(--hover-color);
+}
+
+.footer-address {
+    font-style: normal;
+}
+
+.nav-pages {
+    letter-spacing: 0.02em;
 }

@@ -1,8 +1,8 @@
 :root {
-    --primary-txt-color:#212121;
-    --secondary-txt-color:#757575;
-    --primary-bgc:#FFFFFF;
-    --secondary-bgc:#2F303A;
+    --primary-txt-color: #212121;
+    --secondary-txt-color: #757575;
+    --primary-bgc: #FFFFFF;
+    --secondary-bgc: #2F303A;
     --hover-color: #2196F3;
 }
 
@@ -14,81 +14,142 @@ body {
     line-height: 1.17;
     letter-spacing: 0.03em;
 }
+
 li {
     list-style: none;
 }
+
 a {
     text-decoration: none;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
 .contacts .contacts-link {
     color: var(--secondary-txt-color);
 }
+
 .header {
     font-weight: 500;
 }
+
 .header-nav .nav-link {
     color: inherit;
 }
+
 .header-nav .nav-link:hover,
 .contacts .contacts-link:hover {
     color: var(--hover-color);
 }
+
 .header-nav .nav-link:focus,
 .contacts .contacts-link:focus {
     color: var(--hover-color);
 }
+
+.filter {
+    margin-bottom: 50px;
+}
+
 .filter-button {
+    padding: 6px 22px;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.63;
+    border-color: transparent;
+    border-radius: 4px;
 }
+
 .filter .filter-button {
     color: inherit;
     background-color: #F5F4FA;
 }
+
 .filter .filter-button:hover {
     color: #FFFFFF;
     background-color: var(--hover-color)
 }
+
 .filter .filter-button:focus {
     color: #FFFFFF;
 }
+
+.cards-img {
+    margin-bottom: 20px;
+}
+
 .cards-title {
+    margin-bottom: 4px;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 }
+
 .cards-phrase {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.88;
 }
+
+.portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .footer-location,
 .footer-contacts {
     font-weight: 400;
     line-height: 1.71;
 }
+
 .footer {
     background-color: #2F303A;
 }
+
 .footer-contacts {
     color: rgba(255, 255, 255, 0.6);
 }
+
 .footer-location,
 .footer-phrase {
     color: #FFFFFF;
 }
+
 .nav-img:hover {
     background-color: var(--hover-color);
 }
-.nav-link.current{
+
+.nav-link.current {
     color: var(--hover-color);
-}.nav-pages {
+}
+
+.nav-pages {
     letter-spacing: 0.02em;
 }
+
 .footer-address {
     font-style: normal;
 }
+
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -100,4 +161,4 @@ a {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
-  }
+}

@@ -19,15 +19,15 @@
     <!-- Шапка -->
 
     <header class="header">
-        <div class="container">
-            <nav class="header-nav">
+        <div class="container centered">
+            <nav class="header-nav centered">
                 <a href="./index.html" class="nav-logo">
                     <img class="nav-image" src="./img/logo.svg" alt="Главная страница">
                 </a>
 
-                <ul class="nav-pages">
+                <ul class="nav-pages centered">
                     <li class="nav-item">
-                        <a href="" class="nav-link current">Студия</a>
+                        <a href="./index.html" class="nav-link current">Студия</a>
                     </li>
                     <li class="nav-item">
                         <a href="./portfolio.html" class="nav-link">Портфолио</a>
@@ -38,7 +38,7 @@
                 </ul>
 
             </nav>
-            <ul class="contacts">
+            <ul class="contacts centered">
                 <li class="contacts-item">
                     <img src="./img/envelope.svg" alt="Иконка письма">
                     <a href="mailto:info@devstudio.com" class="contacts-link">info@devstudio.com</a>
@@ -82,25 +82,30 @@
                     <li class="feature-item">
                         <img src="./img/features-img/3.svg" alt="" class="feature-svg" width="270" height="120">
                         <h2 class="feature-title">Планирование</h2>
-                        <p class="feature-phrase">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                        <p class="feature-phrase">Равным образом консультация с широким активом в значительной степени обуславливает.
+                        </p>
                     </li>
                     <li class="feature-item">
                         <img src="./img/features-img/4.svg" alt="" class="feature-svg" width="270" height="120">
                         <h2 class="feature-title">Современные технологии</h2>
-                        <p class="feature-phrase">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                        <p class="feature-phrase">Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+                        </p>
                     </li>
                 </ul>
 
                 <h2 class="gallery-title">Чем мы занимаемся</h2>
-                <ul class="feature-list">
-                    <li class="our-advatgaes-gallery__item">
-                        <img src="./img/box-1.jpg" alt="Разработка для планшетов" class="our-advantages-gallery__images" width="370">
+                <ul class="feature-list gallery">
+                    <li class="gallery-item">
+                        <img src="./img/box-1.jpg" alt="Разработка для планшетов" class="gallery__images" width="370">
+                        <p class="gallry-phrase">Десктопные приложения</p>
                     </li>
-                    <li class="our-advatgaes-gallery__item">
-                        <img src="./img/box-2.jpg" alt="Разработка для мобильных устройств" class="our-advantages-gallery__images" width="370">
+                    <li class="gallery-item">
+                        <img src="./img/box-2.jpg" alt="Разработка для мобильных устройств" class="gallery__images" width="370">
+                        <p class="gallry-phrase">Мобильные приложения</p>
                     </li>
-                    <li class="our-advatgaes-gallery__item">
-                        <img src="./img/box-3.jpg" alt="Разработка для ПК" class="our-advantages-gallery__images" width="370">
+                    <li class="gallery-item">
+                        <img src="./img/box-3.jpg" alt="Разработка для ПК" class="gallery__images" width="370">
+                        <p class="gallry-phrase">Дизайнерские решения</p>
                     </li>
                 </ul>
             </div>
@@ -229,27 +234,27 @@
             <div class="container">
                 <h2 class="clients-title">Постоянные клиенты</h2>
                 <ul class="clients-list">
-                    <li class="clients-item">
+                    <li class="clients-item centered">
                         <a href="" class="clients-link"><img src="./img/clients-img/logo 1.svg" alt="" class="clients-logo">
                         </a>
                     </li>
-                    <li class="clients-item">
+                    <li class="clients-item centered">
                         <a href="" class="clients-link"><img src="./img/clients-img/logo 2.svg" alt="" class="clients-logo">
                         </a>
                     </li>
-                    <li class="clients-item">
+                    <li class="clients-item centered">
                         <a href="" class="clients-link"><img src="./img/clients-img/logo 3.svg" alt="" class="clients-logo">
                         </a>
                     </li>
-                    <li class="clients-item">
+                    <li class="clients-item centered">
                         <a href="" class="clients-link"><img src="./img/clients-img/logo 4.svg" alt="" class="clients-logo">
                         </a>
                     </li>
-                    <li class="clients-item">
+                    <li class="clients-item centered">
                         <a href="" class="clients-link"><img src="./img/clients-img/logo 5.svg" alt="" class="clients-logo">
                         </a>
                     </li>
-                    <li class="clients-item">
+                    <li class="clients-item centered">
                         <a href="" class="clients-link"><img src="./img/clients-img/logo 6.svg" alt="" class="clients-logo">
                         </a>
                     </li>
@@ -263,21 +268,22 @@
 
     <footer class="footer">
         <div class="container">
-            <a href="./index.html"><img src="./img/logo.svg" alt="Логотип"></a>
+            <a class="footer-logo" href="./index.html"><img src="./img/logo2.svg" alt="Логотип"></a>
             <address class="footer-address">
-            <ul class="footer-list">
-                <li class="footer-city">
-                    <p class="footer-location">г. Киев, пр-т Леси Украинки, 26</p>
-                </li>
-                <li class="footer-item">
-                    <p class="footer-contacts">info@example.com</p>
-                </li>
-                <li class="footer-item class">
-                    <p class="footer-contacts">+38 099 111 11 11</p>
-                </li>
-            </ul>
-        </address>
-            <b class="footer-phrase">Постоянные клиенты</b>
+                <ul class="footer-list">
+                    <li class="footer-city">
+                        <p class="footer-location">г. Киев, пр-т Леси Украинки, 26</p>
+                    </li>
+                    <li class="footer-item">
+                        <p class="footer-contacts">info@example.com</p>
+                    </li>
+                    <li class="footer-item class">
+                        <p class="footer-contacts">+38 099 111 11 11</p>
+                    </li>
+                </ul>
+            </address>
+
+            <b class="footer-phrase">Присоединяйтесь</b>
             <ul class="footer-link">
                 <li class="footer-networks">
                     <a href="" class="footer-nav">
@@ -300,6 +306,7 @@
                     </a>
                 </li>
             </ul>
+
         </div>
     </footer>
 

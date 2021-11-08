@@ -120,7 +120,7 @@ ul {
     flex-wrap: wrap;
 }
 
-.cards-item {
+. .cards-item {
     border: 1px solid #EEEEEE;
     margin-bottom: 30px;
 }

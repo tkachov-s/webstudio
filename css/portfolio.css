@@ -49,18 +49,6 @@ ul {
     align-items: center;
 }
 
-.contacts.centered {
-    margin-left: auto;
-}
-
-.contacts.centered>.contacts-item+.contacts-item {
-    margin-left: 50px;
-}
-
-.contacts .contacts-link {
-    color: var(--secondary-txt-color);
-}
-
 .header {
     font-weight: 500;
 }
@@ -72,6 +60,10 @@ ul {
     padding-bottom: 32px;
 }
 
+.nav-link.current {
+    color: var(--hover-color);
+}
+
 .header-nav .nav-link:hover,
 .contacts .contacts-link:hover {
     color: var(--hover-color);
@@ -80,6 +72,56 @@ ul {
 .header-nav .nav-link:focus,
 .contacts .contacts-link:focus {
     color: var(--hover-color);
+}
+
+.nav-pages {
+    margin-left: 93px;
+    letter-spacing: 0.02em;
+}
+
+.nav-pages .nav-item+.nav-item {
+    margin-left: 50px;
+}
+
+.contacts.centered {
+    margin-left: auto;
+}
+
+.contacts-item {
+    display: flex;
+    align-items: center;
+}
+
+.contacts.centered>.contacts-item+.contacts-item {
+    margin-left: 50px;
+}
+
+.contacts-item::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 10px;
+}
+
+.contacts-item:nth-child(1)::before {
+    background-image: url(../img/envelope.svg);
+}
+
+.contacts-item:nth-child(2)::before {
+    background-image: url(../img/mobile.svg);
+}
+
+.contacts .contacts-link {
+    color: var(--secondary-txt-color);
+}
+
+.header-nav .nav-link {
+    color: inherit;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .filter {
@@ -160,23 +202,99 @@ ul {
     padding-bottom: 94px;
 }
 
-.footer-location,
-.footer-contacts {
-    font-weight: 400;
-    line-height: 1.71;
-}
-
 .footer {
     background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.footer-address {
+    font-style: normal;
+}
+
+.footer-item+.footer-item {
+    margin-top: 9px;
 }
 
 .footer-contacts {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-location,
-.footer-phrase {
+.footer-contacts,
+.footer-location {
+    font-weight: 400;
+    line-height: 1.71;
+}
+
+.footer-col.low {
+    margin-left: 70px;
+    padding-top: 6px;
+}
+
+.footer-phrase,
+.footer-location {
     color: #FFFFFF;
+}
+
+.footer-phrase {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.footer-link {
+    display: flex;
+}
+
+.footer-networks+.footer-networks {
+    margin-left: 10px;
+}
+
+.footer-nav::after {
+    display: block;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    /* background-size: auto; */
+    background-position: center;
+}
+
+.footer-nav.instagram::after {
+    background-image: url(../img/social-networks-wh/instagram-wh.svg);
+}
+
+.footer-nav.twitter::after {
+    background-image: url(../img/social-networks-wh/twitter-wh.svg);
+}
+
+.footer-nav.facebook::after {
+    background-image: url(../img/social-networks-wh/facebook-wh.svg);
+}
+
+.footer-nav.linkedin::after {
+    background-image: url(../img/social-networks-wh/linkedin-wh.svg);
+}
+
+.feature-svg:hover,
+.nav-img:hover,
+.social-logo:hover {
+    background-color: var(--hover-color);
+}
+
+.feature-svg:focus,
+.nav-img:focus,
+.social-logo:focus {
+    background-color: var(--hover-color);
 }
 
 .nav-img:hover {
@@ -196,16 +314,27 @@ ul {
     margin-left: 50px;
 }
 
-.footer-address {
-    font-style: normal;
+.social-network::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
 }
 
-.footer-link {
-    display: flex;
+.social-network.instagram::after {
+    background-image: url(../img/social-networks/instagram.svg);
 }
 
-.footer-networks+.footer-networks {
-    margin-left: 10px;
+.social-network.twitter::after {
+    background-image: url(../img/social-networks/twitter.svg);
+}
+
+.social-network.facebook::after {
+    background-image: url(../img/social-networks/facebook.svg);
+}
+
+.social-network.linkedin::after {
+    background-image: url(../img/social-networks/linkedin.svg);
 }
 
 .visually-hidden {

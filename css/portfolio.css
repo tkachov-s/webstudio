@@ -96,23 +96,6 @@ ul {
     margin-left: 50px;
 }
 
-.contacts-item::before {
-    content: '';
-    width: 20px;
-    height: 20px;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-right: 10px;
-}
-
-.contacts-item:nth-child(1)::before {
-    background-image: url(../img/envelope.svg);
-}
-
-.contacts-item:nth-child(2)::before {
-    background-image: url(../img/mobile.svg);
-}
-
 .contacts .contacts-link {
     color: var(--secondary-txt-color);
 }
@@ -262,11 +245,17 @@ ul {
 .footer-nav::after {
     display: block;
     content: '';
-    width: 20px;
-    height: 20px;
-    background-repeat: no-repeat;
-    /* background-size: auto; */
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    background-size: auto;
     background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-nav:hover::after {
+    background-color: #2196F3;
 }
 
 .footer-nav.instagram::after {

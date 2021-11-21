@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <!-- <link rel="stylesheet" href="./css/portfolio.css"> -->
     <link rel="stylesheet" href="./css/main.css">
     <title>Студия</title>
 </head>
@@ -27,13 +26,13 @@
 
                 <ul class="nav-pages centered">
                     <li class="nav-item">
-                        <a href="./index.html" class="nav-link current first">Студия</a>
+                        <a href="./index.html" class="nav-link current">Студия</a>
                     </li>
                     <li class="nav-item">
-                        <a href="./portfolio.html" class="nav-link">Портфолио</a>
+                        <a href="./portfolio.html" class="nav-link secondary">Портфолио</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">Контакты</a>
+                        <a href="" class="nav-link secondary">Контакты</a>
                     </li>
                 </ul>
 
@@ -66,7 +65,7 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-                <button type="button" class="button">Заказать услугу</button>
+                <button type="button" class="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
 
@@ -400,6 +399,17 @@
         </div>
     </footer>
 
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ipsum hic aut animi debitis? Tenetur velit repellendus dolor sit voluptates blanditiis reprehenderit incidunt qui, beatae exercitationem. Exercitationem officia dolore voluptatum eligendi nobis
+                consequuntur dignissimos numquam porro rerum itaque enim debitis ut minima molestiae reiciendis odit amet, fugiat, perferendis delectus. Veritatis.
+            </p>
+            <button data-modal-close>Закрыть</button>
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>

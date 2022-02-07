@@ -1,0 +1,74 @@
+@import '../utils/variables';
+.features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.feature-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.feature-list__item {
+    width: 270px;
+}
+
+.feature-list__item+.feature-list__item {
+    margin-left: 30px;
+}
+
+.feature-list__svg {
+    width: 70px;
+    height: 70px;
+}
+
+.wrappper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: #F5F4FA;
+}
+
+.feature-list__title {
+    margin-bottom: 10px;
+}
+
+.feature-list__phrase,
+.team__position {
+    color: $secondary-txt-color;
+}
+
+.feature-list__phrase {
+    margin-bottom: 94px;
+    font-weight: 400;
+    line-height: 1.71;
+}
+
+.gallery-title {
+    margin-bottom: 50px;
+}
+
+.gallery__item+.gallery__item {
+    margin-left: 30px;
+}
+
+.gallery-position {
+    position: relative;
+    width: 370px;
+    height: 294px;
+}
+
+.gallery__phrase {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: rgba(47, 48, 58, 0.8);
+}

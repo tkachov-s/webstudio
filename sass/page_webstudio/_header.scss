@@ -1,0 +1,138 @@
+@import '../utils/variables';
+.header {
+    font-weight: 500;
+    background-color: #FFFFFF;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.menu .menu__page {
+    color: inherit;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu .menu__page:hover,
+.menu .menu__page:focus {
+    color: $hover-color;
+}
+
+.menu__page.current {
+    color: $hover-color;
+}
+
+.menu__page.current::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 4px;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: #2196F3;
+}
+
+.menu__page.secondary {
+    position: relative;
+}
+
+.menu__page.secondary::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: $hover-color;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    transform: scaleX(0);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu__page.secondary:hover::after,
+.menu__page.secondary:focus::after {
+    transform: scaleX(1);
+}
+
+.menu__list {
+    margin-left: 93px;
+    letter-spacing: 0.02em;
+}
+
+.menu__list .menu__item+.menu__item {
+    margin-left: 50px;
+}
+
+.menu__item {
+    position: relative;
+}
+
+.contacts.centered {
+    margin-left: auto;
+}
+
+.contacts__item {
+    display: flex;
+    align-items: center;
+}
+
+.contacts__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts__link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    transform: scaleX(0);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: $hover-color;
+}
+
+.contacts__link:hover::after,
+.contacts__link:focus::after {
+    transform: scaleX(1);
+}
+
+.contacts .contacts__link:hover,
+.contacts .contacts__link:focus {
+    color: $hover-color;
+    fill: $hover-color;
+}
+
+.contacts.centered>.contacts__item+.contacts__item {
+    margin-left: 50px;
+}
+
+.contacts__svg {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.envelope {
+    width: 16px;
+    height: 12px;
+}
+
+.mobile {
+    width: 10px;
+    height: 16px;
+}
+
+.contacts .contacts__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $secondary-txt-color;
+}

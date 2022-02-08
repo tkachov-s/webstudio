@@ -1,0 +1,126 @@
+.header {
+    font-weight: 500;
+    background-color: #FFFFFF;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.menu {
+    &__list {
+        margin-left: 93px;
+        letter-spacing: 0.02em;
+    }
+    &__item {
+        position: relative;
+    }
+    &__item+&__item {
+        margin-left: 50px;
+    }
+}
+
+.menu__page {
+    color: inherit;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        color: $hover-color;
+    }
+    &.current {
+        color: $hover-color;
+        &::after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            border-radius: 4px;
+            display: block;
+            content: '';
+            width: 100%;
+            height: 4px;
+            background-color: #2196F3;
+        }
+    }
+    &.secondary {
+        position: relative;
+        &:hover::after,
+        &:focus::after {
+            transform: scaleX(1);
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background-color: $hover-color;
+            width: 100%;
+            height: 4px;
+            border-radius: 4px;
+            transform: scaleX(0);
+            transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
+}
+
+.contacts {
+    &.centered {
+        margin-left: auto;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+    }
+    &__link {
+        padding-top: 32px;
+        padding-bottom: 32px;
+        position: relative;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__svg {
+        margin-right: 10px;
+        fill: currentColor;
+    }
+    & .contacts__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $secondary-txt-color;
+        &:hover,
+        &:focus {
+            color: $hover-color;
+            fill: $hover-color;
+        }
+        &:hover::after,
+        &:focus::after {
+            transform: scaleX(1);
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            border-radius: 4px;
+            transform: scaleX(0);
+            transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            background-color: $hover-color;
+        }
+    }
+}
+
+.contacts.centered>.contacts__item+.contacts__item {
+    margin-left: 50px;
+}
+
+.envelope {
+    width: 16px;
+    height: 12px;
+}
+
+.mobile {
+    width: 10px;
+    height: 16px;
+}

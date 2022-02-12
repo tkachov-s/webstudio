@@ -21,7 +21,7 @@
         <div class="container centered">
             <nav class="menu centered">
                 <a class="menu__logo" href="./index.html">
-                    <img class="menu__image" src="./img/logo.svg" alt="Главная страница">
+                    <img class="menu__image" src="./img/logo.svg" width="134" height="28" alt="Главная страница">
                 </a>
 
                 <ul class="menu__list centered">
@@ -37,14 +37,10 @@
                 </ul>
 
             </nav>
+
+
+
             <ul class="contacts centered">
-                <li class="contacts__item">
-                    <a class="contacts__link" href="mailto:info@devstudio.com">
-                        <svg class="contacts__svg envelope">
-                            <use href="./img/sprite.svg#icon-envelope"></use>
-                        </svg> info@devstudio.com
-                    </a>
-                </li>
                 <li class="contacts__item">
                     <a class="contacts__link" href="tel:+38 096 111 11 11">
                         <svg class="contacts__svg mobile">
@@ -52,13 +48,68 @@
                         </svg> +38 096 111 11 11
                     </a>
                 </li>
+                <li class="contacts__item">
+                    <a class="contacts__link" href="mailto:info@devstudio.com">
+                        <svg class="contacts__svg envelope">
+                            <use href="./img/sprite.svg#icon-envelope"></use>
+                        </svg> info@devstudio.com
+                    </a>
+                </li>
+
+            </ul>
+            <button class="burger-btn" type="button" data-menu-button>
+                <svg class="burger-icon">
+                    <use href="./img/sprite.svg#icon-burger"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="mobile-menu" data-menu>
+
+            <button class="mobile-menu__close-btn" type="button" data-menu-close>
+                <svg class="mobile-menu__svg">
+                    <use href="./img/sprite.svg#icon-msvg"></use>
+                </svg>
+            </button>
+
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link current" href="">Студия</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link secondary" href="">Портфолио</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link secondary" href="">Контакты</a>
+                </li>
+            </ul>
+            <ul class="mobile-menu__contacts">
+                <li class="mobile-menu__contacts-item">
+                    <a class="mobile-menu__contacts-link phone" href="tel:380961111111">+38 096 111 11 11</a>
+                </li>
+                <li class="mobile-menu__contacts-item">
+                    <a class="mobile-menu__contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="mobile-menu__socials">
+                <li class="mobile-menu__socials-item">
+                    <a class="mobile-menu__socials-link" href="#">Instagram</a>
+                </li>
+                <li class="mobile-menu__socials-item">
+                    <a class="mobile-menu__socials-link" href="#">Twitter</a>
+                </li>
+                <li class="mobile-menu__socials-item">
+                    <a class="mobile-menu__socials-link" href="#">Facebook</a>
+                </li>
+                <li class="mobile-menu__socials-item">
+                    <a class="mobile-menu__socials-link" href="#">LinkedIn</a>
+                </li>
             </ul>
         </div>
     </header>
 
     <!--Форма заказа услуги  -->
 
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
 
 
         <div class="modal">
@@ -120,24 +171,24 @@
 
             </form>
         </div>
-    </div>
+    </div> -->
 
     <!-- Основная часть -->
 
-    <main class="main ">
+    <!-- <main class="main ">
 
-        <!-- Герой -->
+        Герой
 
-        <section class="hero">
-            <div class="container">
-                <h1 class="hero__title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-                <button class="hero__button" type="button" data-modal-open>Заказать услугу</button>
-            </div>
-        </section>
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero__title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
+            <button class="hero__button" type="button" data-modal-open>Заказать услугу</button>
+        </div>
+    </section> -->
 
-        <!-- Особенности -->
+    <!-- Особенности -->
 
-        <section class="features ">
+    <!-- <section class="features ">
             <div class="container ">
                 <ul class="feature-list ">
                     <li class="feature-list__item ">
@@ -202,11 +253,11 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
-        <!-- Наша команда -->
+    <!-- Наша команда -->
 
-        <section class="our-team ">
+    <!-- <section class="our-team ">
             <div class="container ">
                 <h2 class="team-title ">Наша команда</h2>
                 <ul class="team-list ">
@@ -352,10 +403,10 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
-        <!-- Постоянные клиенты -->
-        <section class="clients ">
+    <!-- Постоянные клиенты -->
+    <!-- <section class="clients ">
             <div class="container ">
                 <h2 class="clients__title ">Постоянные клиенты</h2>
                 <ul class="clients__list ">
@@ -403,13 +454,13 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
-    </main>
+    <!-- </main> -->
 
     <!-- Подвал -->
 
-    <footer class="footer ">
+    <!-- <footer class="footer ">
         <div class="container ">
             <div class="row ">
                 <div class="footer-col ">
@@ -476,9 +527,10 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
 
     <script src="./js/modal.js "></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

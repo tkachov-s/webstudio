@@ -21,7 +21,7 @@
         <div class="container centered">
             <nav class="menu centered">
                 <a class="menu__logo" href="./index.html">
-                    <img class="menu__image" src="./img/logo.svg" alt="Главная страница">
+                    <img class="menu__image" src="./img/logo.svg" width="134" height="28" alt="Главная страница">
                 </a>
 
                 <ul class="menu__list centered">
@@ -37,7 +37,17 @@
                 </ul>
 
             </nav>
+
+
+
             <ul class="contacts centered">
+                <li class="contacts__item">
+                    <a class="contacts__link" href="tel:+38 096 111 11 11">
+                        <svg class="contacts__svg mobile">
+                            <use href="./img/sprite.svg#icon-mobile"></use>
+                        </svg> +38 096 111 11 11
+                    </a>
+                </li>
                 <li class="contacts__item">
                     <a class="contacts__link" href="mailto:info@devstudio.com">
                         <svg class="contacts__svg envelope">
@@ -45,12 +55,59 @@
                         </svg> info@devstudio.com
                     </a>
                 </li>
-                <li class="contacts__item">
-                    <a class="contacts__link" href="tel:+38 096 111 11 11">
-                        <svg class="contacts__svg mobile">
-                            <use href="./img/sprite.svg#icon-mobile"></use>
-                        </svg> +38 096 111 11 11
-                    </a>
+
+            </ul>
+
+            <button class="burger-btn" type="button" data-menu-button>
+                <svg class="burger-icon">
+                    <use href="./img/sprite.svg#icon-burger"></use>
+                </svg>
+            </button>
+
+
+
+        </div>
+
+
+        <div class="mobile-menu" data-menu>
+
+            <button class="mobile-menu__close-btn" type="button" data-menu-close>
+                <svg class="mobile-menu__svg">
+                    <use href="./img/sprite.svg#icon-msvg"></use>
+                </svg>
+            </button>
+
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link secondary" href="">Студия</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link current" href="">Портфолио</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link secondary" href="">Контакты</a>
+                </li>
+            </ul>
+            <ul class="mobile-menu__contacts">
+                <li class="mobile-menu__contacts-item">
+                    <a class="mobile-menu__contacts-link phone" href="tel:380961111111">+38 096 111 11 11</a>
+                </li>
+                <li class="mobile-menu__contacts-item">
+                    <a class="mobile-menu__contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="mobile-menu__socials">
+                <li class="mobile-menu__socials-item">
+                    <a class="mobile-menu__socials-link" href="#">Instagram</a>
+                </li>
+                <li class="mobile-menu__socials-item">
+                    <a class="mobile-menu__socials-link" href="#">Twitter</a>
+                </li>
+                <li class="mobile-menu__socials-item">
+                    <a class="mobile-menu__socials-link" href="#">Facebook</a>
+                </li>
+                <li class="mobile-menu__socials-item">
+                    <a class="mobile-menu__socials-link" href="#">LinkedIn</a>
                 </li>
             </ul>
         </div>
@@ -59,8 +116,6 @@
     <!-- Основаня часть -->
 
     <main>
-
-        <!-- Фильтры -->
 
         <section class="portfolio">
             <div class="container">
@@ -78,7 +133,7 @@
                     <li class="cards__item">
                         <a href="" class="cards__wrapper-link">
                             <div class="card-position">
-                                <img class="cards__img" src="./img//portfolio-img/img-1.jpg" width="368" alt="Картинка">
+                                <img class="cards__img" src="./img//portfolio-img/img-1.jpg" alt="Картинка">
                                 <p class="position__phrase">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
                             <h2 class="cards__title">Технокряк</h2>
@@ -88,7 +143,7 @@
                     <li class="cards__item">
                         <a href="" class="cards__wrapper-link">
                             <div class="card-position">
-                                <img class="cards__img" src="./img//portfolio-img/img2.jpg" width="368" alt="Картинка">
+                                <img class="cards__img" src="./img//portfolio-img/img2.jpg" alt="Картинка">
                                 <p class="position__phrase">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
                             <h2 class="cards__title">Постер New Orlean vs Golden Star</h2>
@@ -98,7 +153,7 @@
                     <li class="cards__item">
                         <a href="" class="cards__wrapper-link">
                             <div class="card-position">
-                                <img class="cards__img" src="./img//portfolio-img/img3.jpg" width="368" alt="Картинка">
+                                <img class="cards__img" src="./img//portfolio-img/img3.jpg" alt="Картинка">
                                 <p class="position__phrase">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
                             <h2 class="cards__title">Ресторан Seafood </h2>
@@ -108,7 +163,7 @@
                     <li class="cards__item">
                         <a href="" class="cards__wrapper-link">
                             <div class="card-position">
-                                <img class="cards__img" src="./img//portfolio-img/img4.jpg" width="368" alt="Картинка">
+                                <img class="cards__img" src="./img//portfolio-img/img4.jpg" alt="Картинка">
                                 <p class="position__phrase">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
                             <h2 class="cards__title">Проект Prime</h2>
@@ -118,7 +173,7 @@
                     <li class="cards__item">
                         <a href="" class="cards__wrapper-link">
                             <div class="card-position">
-                                <img class="cards__img" src="./img//portfolio-img/img5.jpg" width="368" alt="Картинка">
+                                <img class="cards__img" src="./img//portfolio-img/img5.jpg" alt="Картинка">
                                 <p class="position__phrase">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
                             <h2 class="cards__title">Проект Boxes</h2>
@@ -128,7 +183,7 @@
                     <li class="cards__item">
                         <a href="" class="cards__wrapper-link">
                             <div class="card-position">
-                                <img class="cards__img" src="./img//portfolio-img/img6.jpg" width="368" alt="Картинка">
+                                <img class="cards__img" src="./img//portfolio-img/img6.jpg" alt="Картинка">
                                 <p class="position__phrase">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
                             <h2 class="cards__title">Inspiration has no Borders</h2>
@@ -138,7 +193,7 @@
                     <li class="cards__item">
                         <a href="" class="cards__wrapper-link">
                             <div class="card-position">
-                                <img class="cards__img" src="./img//portfolio-img/img7.jpg" width="368" alt="Картинка">
+                                <img class="cards__img" src="./img//portfolio-img/img7.jpg" alt="Картинка">
                                 <p class="position__phrase">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
                             <h2 class="cards__title">Издание Limited Edition</h2>
@@ -148,7 +203,7 @@
                     <li class="cards__item">
                         <a href="" class="cards__wrapper-link">
                             <div class="card-position">
-                                <img class="cards__img" src="./img//portfolio-img/img8.jpg" width="368" alt="Картинка">
+                                <img class="cards__img" src="./img//portfolio-img/img8.jpg" alt="Картинка">
                                 <p class="position__phrase">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
                             <h2 class="cards__title">Проект LAB</h2>
@@ -158,7 +213,7 @@
                     <li class="cards__item">
                         <a href="" class="cards__wrapper-link">
                             <div class="card-position">
-                                <img class="cards__img" src="./img//portfolio-img/img9.jpg" width="368" alt="Картинка">
+                                <img class="cards__img" src="./img//portfolio-img/img9.jpg" alt="Картинка">
                                 <p class="position__phrase">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
                             <h2 class="cards__title">Growing Business</h2>
@@ -168,6 +223,7 @@
                 </ul>
             </div>
         </section>
+
     </main>
 
     <!-- Подвал -->
@@ -241,5 +297,7 @@
         </div>
     </footer>
 </body>
+
+<script src="./js/mobile-menu.js"></script>
 
 </html>

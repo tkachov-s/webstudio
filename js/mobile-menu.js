@@ -3,11 +3,12 @@
     const mobileMenuRef = document.querySelector("[data-menu]");
     const mobileBtnClose = document.querySelector("[data-menu-close]");
 
-    menuBtnRef.addEventListener("click", () => {
-        mobileMenuRef.classList.toggle("is-open");
-    });
 
-    mobileBtnClose.addEventListener("click", () => {
+    menuBtnRef.addEventListener('click', toggleMenu);
+    mobileBtnClose.addEventListener('click', toggleMenu);
+
+    function toggleMenu() {
         mobileMenuRef.classList.toggle("is-open");
-    });
+    }
+
 })();

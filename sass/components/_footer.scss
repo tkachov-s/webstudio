@@ -1,3 +1,4 @@
+@import '../utils/media';
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -55,7 +56,7 @@
         line-height: 1.17;
     }
     &__input {
-        width: 358px;
+        // width: 358px;
         height: 50px;
         padding-left: 16px;
         background-color: inherit;

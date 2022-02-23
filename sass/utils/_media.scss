@@ -1,17 +1,106 @@
 // Cтили для шапки
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 359px) {
+    .header {
+        padding: 16px 0px;
+    }
+    
+    .burger-btn, .mobile-menu__close-btn {
+        right: 10px;
+    }
+    // !!!!!Cделать!!!!!
+
+    .mobile-menu {
+        padding: 34px 30px;
+    
+        &__list {
+            margin-bottom: 226px;
+            font-size: 27px;
+        }
+        &__item:not(:last-child) {
+            margin-bottom: 15px;
+        }
+        &__contacts-item:not(:last-child) {
+            margin-bottom: 22px;
+        }
+        &__contacts-link {
+            font-size: 17px;
+        }
+        &__contacts-link.phone {
+            color: #2196F3;
+            font-size: 24px;
+        }
+        &__socials-item {
+            margin-right: 7px;
+            padding-right: 7px;
+        }
+        &__socials-link {
+            font-size: 12px;
+        }
+        
+    }
+    .contacts {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 479px) {
+    .header {
+        padding: 16px 0px;
+    }
+    // .clients__list {
+    //     display: none;
+    // }
+
+    .mobile-menu {
+        padding: 38px 34px;
+
+        &__list {
+            margin-bottom: 255px;
+            font-size: 30px;
+        }
+        &__item:not(:last-child) {
+            margin-bottom: 15px;
+        }
+        &__contacts-item:not(:last-child) {
+            margin-bottom: 22px;
+        }
+        &__contacts-link {
+            font-size: 19px;
+        }
+        &__contacts-link.phone {
+            color: #2196F3;
+            font-size: 27px;
+        }
+        &__socials {
+            margin-top: auto;
+            justify-content: space-between;
+        }
+        &__socials-item {
+            margin-right: 7px;
+            padding-right: 7px;
+        }
+        &__socials-link {
+            font-size: 13.5px;
+        }
+        
+    }
+    .contacts {
+        display: none;
+    }
+    
+}
+
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .header {
+        padding: 16px 0px;
+    }
     .container {
         width: 480px;
         margin: 0 auto;
     }
-}
-
-@media screen and (max-width: 767px) {
     .contacts {
         display: none;
-    }
-    .header {
-        padding: 16px 0px;
     }
 }
 
@@ -74,13 +163,79 @@
         margin-left: 50px;
     }
 }
-
 // Cтили для шапки
 // 
 // 
 // 
 // Стили для футера
-@media screen and (max-width: 767px) {
+@media  screen and (min-width: 320px) and (max-width: 359px) {
+    .footer {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .row {
+        justify-content: center;
+    }
+    .footer-col {
+        text-align: center;
+    }
+    .footer-col.low {
+        margin-top: 30px;
+        margin-left: 0;
+        padding-top: 0;
+        
+    }
+    .footer-form {
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .footer-form__button {
+        margin-top: 22px;
+        margin-bottom: 10px;
+        margin-left: 0;
+    }
+    .footer__input {
+        width: 290px;
+    }
+}
+
+@media  screen and (min-width: 360px) and (max-width: 479px) {
+    .footer {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .row {
+        justify-content: center;
+    }
+    .footer-col {
+        text-align: center;
+    }
+    .footer-col.low {
+        margin-top: 30px;
+        margin-left: 0;
+        padding-top: 0;
+        
+    }
+    .footer-form {
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .footer-form__button {
+        margin-top: 22px;
+        margin-bottom: 10px;
+        margin-left: 0;
+    }
+    .footer__input {
+        width: 330px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    
     .row {
         flex-direction: column;
     }
@@ -153,13 +308,40 @@
 // 
 // 
 // 
-// Cтили для секции "Main"  на странице Студия
-// @media screen and (min-width: 768px) and (max-width: 1199px)
 // 
 // 
 // 
 // Секция Hero
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 359px) {
+    .hero {
+        height: 325px;
+        padding-top: 118px;
+        padding-bottom: 118px;
+    }
+    .hero__title {
+        display: inline;
+        font-size: 20px;
+    }
+    .hero__button {
+        margin-top: 15px;
+    }
+}
+@media screen and (min-width: 360px) and (max-width: 480px){
+    .hero {
+        height: 325px;
+        padding-top: 118px;
+        padding-bottom: 118px;
+    }
+    .hero__title {
+        display: inline;
+        font-size: 20px;
+    }
+    .hero__button {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
     .hero {
         padding-top: 118px;
         padding-bottom: 118px;
@@ -199,7 +381,59 @@
 // 
 // 
 // Cтили для модального окна
-@media screen and (max-width: 767px) {
+
+@media screen and (min-width: 320px) and (max-width: 359px) {
+    .modal {
+        width: 290px;
+        padding: 30px;
+    }
+    .modal__form-phrase {
+        width: 225px;
+        margin-bottom: 10px;
+    }
+    .form__field + .form__field {
+        margin-top: 10px;
+    }
+    .button-close {
+        width: 25px;
+        height: 25px;
+    }
+    .sent {
+        margin-top: 15px;
+    }
+    .policy {
+        display: -webkit-inline-box;
+    }
+}
+@media screen and (min-width: 360px) and (max-width: 479px) {
+    .modal {
+        width: 330px;
+        padding: 30px;
+    }
+    .modal__form-phrase {
+        width: 270px;
+        margin-bottom: 10px;
+    }
+    .form__field + .form__field {
+        margin-top: 10px;
+    }
+    .button-close {
+        width: 25px;
+        height: 25px;
+    }
+    .sent {
+        margin-top: 20px;
+    }
+    .policy {
+        display: -webkit-inline-box;
+        padding-left: 25px;
+    }
+}
+
+
+
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
     .modal {
         width: 450px;
     }
@@ -216,7 +450,87 @@
 // 
 // 
 // Стили для секции Особенности на странице Студия
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 359px) {
+    .features {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .gallery-title,
+    .feature-list.gallery {
+        display: none;
+    }
+    .feature-list {
+        flex-direction: column;
+    }
+    .feature-list__item {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .feature-list__item+.feature-list__item {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .wrapper {
+        width: 100%;
+    }
+    .feature-list__title {
+        font-size: 14px;
+        text-align: center;
+    }
+    .gallery-title,
+    .feature-list.gallery {
+        display: none;
+    }
+    .feature-list__phrase{
+        margin-bottom: 15px;
+    }
+    
+   
+}
+@media screen and (min-width: 360px) and (max-width: 479px) {
+    .features {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .gallery-title,
+    .feature-list.gallery {
+        display: none;
+    }
+
+    .feature-list {
+        flex-direction: column;
+    }
+    .feature-list__item {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .feature-list__item+.feature-list__item {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .wrapper {
+        width: 100%;
+    }
+    .feature-list__title {
+        font-size: 14px;
+        text-align: center;
+    }
+    .gallery-title,
+    .feature-list.gallery {
+        display: none;
+    }
+    .feature-list__phrase {
+        margin-bottom: 15px;
+    }
+    
+    
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
     .features {
         padding-top: 60px;
         padding-bottom: 60px;
@@ -272,7 +586,7 @@
     }
     .features {
         padding-top: 60px;
-        padding-bottom: 60px;
+        padding-bottom: 0px;
     }
 }
 
@@ -322,7 +636,75 @@
 // 
 // 
 //Cтили для секции Клиенты на странице Студия
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 359px) {
+    .clients__item {
+        width: 137px;
+    }
+    .clients__link {
+        width: 137px;
+    }
+
+    .clients {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .clients__title {
+        font-size: 20px;    
+        margin-bottom: 25px;
+    }
+    
+    .clients__list {
+        flex-wrap: wrap;
+    }
+    
+    .clients__item+.clients__item {
+        margin-left: 0;
+    }
+    .clients__item:nth-child(2n + 1) {
+        margin-right: 15px;
+    }
+    .clients__item:nth-child(-n + 4) {
+        margin-bottom: 15px;
+    }
+    
+    
+}
+
+@media screen and (min-width: 360px) and (max-width: 479px) {
+    .clients__item {
+        width: 157px;
+    }
+    .clients__link {
+        width: 157px;
+    }
+
+    .clients {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .clients__title {
+        font-size: 20px;    
+        margin-bottom: 25px;
+    }
+    
+    .clients__list {
+        flex-wrap: wrap;
+    }
+    
+    .clients__item+.clients__item {
+        margin-left: 0;
+    }
+    .clients__item:nth-child(2n + 1) {
+        margin-right: 15px;
+    }
+    .clients__item:nth-child(-n + 4) {
+        margin-bottom: 15px;
+    }
+    
+}
+// @media screen and (min-width: 320px) and (max-width: 359px)
+// @media screen and (min-width: 360px) and (max-width: 479px)
+@media screen and (min-width: 480px) and (max-width: 767px) {
     .clients {
         padding-top: 60px;
         padding-bottom: 60px;
@@ -396,6 +778,7 @@
         height: 294px;
     }
 }
+
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .portfolio {

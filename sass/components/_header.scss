@@ -91,6 +91,10 @@
         width: 16px;
         height: 12px;
     }
+    &__svg:hover,
+    &__svg:focus {
+        fill: $hover-color;
+    }
     &__link {
         display: flex;
         justify-content: center;
@@ -100,7 +104,6 @@
     &__link:hover,
     &__link:focus {
         color: $hover-color;
-        fill: $hover-color;
     }
     &__link:hover::after,
     &__link:focus::after {
@@ -209,14 +212,15 @@
     &__contacts-item:not(:last-child) {
         margin-bottom: 32px;
     }
-    &__contacts-link.phone {
-        color: $hover-color;
-        font-size: 34px;
-    }
+    
     &__contacts-link {
         color: $secondary-txt-color;
         font-size: 24px;
         font-weight: 500;
+    }
+    &__contacts-link.phone {
+        color: $hover-color;
+        font-size: 34px;
     }
     &__socials {
         display: flex;

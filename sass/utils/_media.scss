@@ -141,9 +141,6 @@
         left: 0;
         padding: 0;
     }
-    body {
-        background-color: aquamarine;
-    }
     .menu__logo {
         padding: 24px 0px;
     }
@@ -350,7 +347,7 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/mobileherobgimg.jpg);
+        background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/mobile-img/mobileherobgimg.jpg);
     }
     .hero__title {
         width: 360px;
@@ -368,12 +365,18 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/tabletherobgimg.jpg);
+        background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/tablet-img/tabletherobgimg.jpg);
+        
     }
     .hero__title {
-        width: 360px;
+        // width: 360px;
         font-size: 26px;
         line-height: 1.61;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .hero {
+        background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/headerbg.jpg);
     }
 }
 
@@ -531,6 +534,7 @@
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
+
     .features {
         padding-top: 60px;
         padding-bottom: 60px;
@@ -568,6 +572,7 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+
     .feature-list__item {
         width: 354px;
     }
@@ -601,33 +606,98 @@
 //
 // 
 // Стили для секции Наша Команда на странице Студия
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 359px) {
     .our-team {
-        padding-top: 60px;
-        padding-bottom: 60px;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
     .team__item {
-        width: 450px;
-    }
-    .team__item:not(:last-child) {
+        width: 100%;
         margin-bottom: 30px;
     }
     .team__item+.team__item {
         margin-left: 0;
     }
-    .team-title {
-        margin-bottom: 30px;
-        font-size: 28px;
-    }
+
     .social-links {
-        margin-left: 122px;
+        display: inline-flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .team__member {
+        width: 290px;
+        height: 307px;
+    }   
+    .gallery-title, .team-title, .clients__title {
+        font-size: 20px;
+    } 
+}
+@media screen and (min-width: 360px) and (max-width: 479px){
+    .our-team {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .team__item {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .team__item+.team__item {
+        margin-left: 0;
+    }
+
+    .social-links {
+        display: inline-flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .team__member {
+        width: 330px;
+        height: 345px;
+    }
+    .gallery-title, .team-title, .clients__title {
+        font-size: 20px;
+    }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    
+    .team__item {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .team__item+.team__item {
+        margin-left: 0;
+    }
+
+    .social-links {
+        display: inline-flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .gallery-title, .team-title, .clients__title {
+        font-size: 28px;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+    .team__item:nth-child(2n + 1) {
+        margin-left: 0px;
+    }
+    .team__item:nth-child(-n + 2) {
+        margin-bottom: 30px;
+    }
     .our-team {
         padding-top: 60px;
         padding-bottom: 60px;
+    }
+    .team__member {
+        width: 354px;
+        height: 374px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .team__member {
+        width: 270px;
+        height: 260px;
     }
 }
 
@@ -759,7 +829,39 @@
 // 
 // 
 // Стили для секции Портфолио на странице Портфолио
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 359px){
+    .cards__img {
+        width: 290px;
+        height: 189px;
+    }
+    .filter__item:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    .cards__item:hover .card-position::before {
+        display: none;
+    }
+    .position__phrase {
+        display: none;
+    }
+    
+    .cards__phrase {
+        margin-bottom: 21px;
+    }
+
+}
+@media screen and (min-width: 360px) and (max-width: 479px){
+    .cards__img {
+        width: 330px;
+        height: 215px;
+    }
+    .cards__item:hover .card-position::before {
+        display: none;
+    }
+    .position__phrase {
+        display: none;
+    }
+}
+@media screen and (min-width: 480px) and(max-width: 767px) {
     .portfolio {
         padding-top: 60px;
         padding-bottom: 60px;
@@ -788,9 +890,7 @@
     .filter {
         justify-content: center;
     }
-    .cards__item+.cards__item {
-        margin-left: 25px;
-    }
+    
     .cards__img {
         width: 354px;
         height: 294px;
@@ -810,5 +910,12 @@
     }
     .cards__item+.cards__item {
         margin-left: 30px;
+    }
+    .cards__img {
+        width: 365px;
+        height: 294px;
+    }
+    .cards__item:nth-child(3n+4) {
+        margin-left: 0;
     }
 }

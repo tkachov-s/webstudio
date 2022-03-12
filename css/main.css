@@ -921,7 +921,7 @@ textarea {
 
 .hero__button:hover, .hero__button:focus {
   cursor: pointer;
-  background-color: #f0c400;
+  background-color: #2196F3;
 }
 
 @media screen and (min-width: 320px) and (max-width: 359px) {
@@ -929,7 +929,7 @@ textarea {
     padding: 16px 0px;
   }
   .burger-btn, .mobile-menu__close-btn {
-    right: 10px;
+    margin-right: 10px;
   }
   .mobile-menu {
     padding: 34px 30px;
@@ -967,11 +967,14 @@ textarea {
   .header {
     padding: 16px 0px;
   }
+  .filter__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
   .mobile-menu {
     padding: 38px 34px;
   }
   .mobile-menu__list {
-    margin-bottom: 255px;
+    margin-bottom: 225px;
     font-size: 30px;
   }
   .mobile-menu__item:not(:last-child) {
@@ -2129,12 +2132,20 @@ textarea {
   pointer-events: auto;
 }
 
+.no-scroll {
+  overflow-y: auto;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
 @media screen and (min-width: 320px) and (max-width: 359px) {
   .header {
     padding: 16px 0px;
   }
   .burger-btn, .mobile-menu__close-btn {
-    right: 10px;
+    margin-right: 10px;
   }
   .mobile-menu {
     padding: 34px 30px;
@@ -2172,11 +2183,14 @@ textarea {
   .header {
     padding: 16px 0px;
   }
+  .filter__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
   .mobile-menu {
     padding: 38px 34px;
   }
   .mobile-menu__list {
-    margin-bottom: 255px;
+    margin-bottom: 225px;
     font-size: 30px;
   }
   .mobile-menu__item:not(:last-child) {

@@ -245,3 +245,12 @@
     opacity: 1;
     pointer-events: auto;
 }
+.no-scroll {
+    overflow-y: auto;
+}
+body.no-scroll {
+    overflow: hidden;
+}
+// .mobile-menu.is-open body{
+
+// }

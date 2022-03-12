@@ -9,6 +9,7 @@
 
     function toggleMenu() {
         mobileMenuRef.classList.toggle("is-open");
+        document.body.classList.toggle('no-scroll');
     }
 
 })();

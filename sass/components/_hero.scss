@@ -35,7 +35,7 @@
         &:hover,
         &:focus {
             cursor: pointer;
-            background-color: #f0c400;
+            background-color: $hover-color;
         }
     }
 }

@@ -5,7 +5,7 @@
     }
     
     .burger-btn, .mobile-menu__close-btn {
-        right: 10px;
+        margin-right: 10px;
     }
     // !!!!!Cделать!!!!!
 
@@ -50,12 +50,14 @@
     // .clients__list {
     //     display: none;
     // }
-
+        .filter__item:not(:last-child) {
+            margin-bottom: 10px;
+        }
     .mobile-menu {
         padding: 38px 34px;
-
+        
         &__list {
-            margin-bottom: 255px;
+            margin-bottom: 225px;
             font-size: 30px;
         }
         &__item:not(:last-child) {

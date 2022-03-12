@@ -5,7 +5,7 @@
     }
     
     .burger-btn, .mobile-menu__close-btn {
-        margin-right: 10px;
+        right: 10px;
     }
     // !!!!!Cделать!!!!!
 
@@ -13,11 +13,14 @@
         padding: 34px 30px;
     
         &__list {
-            margin-bottom: 226px;
+            margin-bottom: 216px;
             font-size: 27px;
         }
         &__item:not(:last-child) {
             margin-bottom: 15px;
+        }
+        &__contacts {
+            margin-bottom: 54px;
         }
         &__contacts-item:not(:last-child) {
             margin-bottom: 22px;
@@ -50,9 +53,9 @@
     // .clients__list {
     //     display: none;
     // }
-        .filter__item:not(:last-child) {
-            margin-bottom: 10px;
-        }
+    .filter__item:not(:last-child) {
+        margin-bottom: 10px;
+    }
     .mobile-menu {
         padding: 38px 34px;
         

@@ -2135,11 +2135,11 @@ textarea {
   pointer-events: auto;
 }
 
-.no-scroll {
+.mobile-menu__wrapper {
   overflow-y: auto;
 }
 
-body.no-scroll {
+body .no-scroll {
   overflow: hidden;
 }
 

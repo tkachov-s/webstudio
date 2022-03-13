@@ -347,6 +347,10 @@ ul {
   background-color: #2196F3;
 }
 
+.footer-form__button:hover {
+  cursor: pointer;
+}
+
 .footer-socials__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -919,9 +923,8 @@ textarea {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero__button:hover, .hero__button:focus {
+.hero__button:hover {
   cursor: pointer;
-  background-color: #2196F3;
 }
 
 @media screen and (min-width: 320px) and (max-width: 359px) {
@@ -1354,7 +1357,7 @@ textarea {
   }
   .policy {
     display: -webkit-inline-box;
-    padding-left: 25px;
+    padding-left: 15px;
   }
 }
 
@@ -2139,7 +2142,7 @@ textarea {
   overflow-y: auto;
 }
 
-body .no-scroll {
+body.no-scroll {
   overflow: hidden;
 }
 
@@ -2573,7 +2576,7 @@ body .no-scroll {
   }
   .policy {
     display: -webkit-inline-box;
-    padding-left: 25px;
+    padding-left: 15px;
   }
 }
 

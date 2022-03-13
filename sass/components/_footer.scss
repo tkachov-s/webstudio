@@ -93,6 +93,9 @@
             background-color: $hover-color;
         }
     }
+    &-form__button:hover {
+        cursor: pointer;
+    }
     &-socials__link {
         display: flex;
         justify-content: center;
